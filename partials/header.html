@@ -8,12 +8,12 @@
 		<a ng-click="tools.user.loginModal()">{{'SITE.LOGIN' | translate}}</a>
 	</span>
 </div>
-<!-- <h1 id="siteTitle">{{'SITE.TITLE' | translate}}</h1> -->
+ <!--<h1 id="siteTitle">{{'SITE.TITLE' | translate}}</h1> -->
 <nav>
 	<ul>
-		<li><a href="#/home">Home</a></li>
-		<li><a href="#/menu">Menu</a></li>
-		<li><a href="#/map">Directions</a></li>
-		<li><a ng-show="tools.user.is('Admin')" href="#/admin">Admin</a></li>
+		<li><a href="#/home">{{'SITE.NAV.HOME' | translate}}</a></li>
+		<li><a href="#/about">{{'SITE.NAV.ABOUT' | translate}}</a></li>
+		<li><a href="#/portfolio">{{'SITE.NAV.PORTFOLIO' | translate}}</a></li>
+		<li><a ng-show="tools.user.is('Admin')" href="#/admin">{{'SITE.NAV.ADMIN' | translate}}</a></li>
 	</ul>
 </nav>

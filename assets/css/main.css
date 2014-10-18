@@ -275,10 +275,21 @@ map{
 }
 
 
-/*Jakes Chaparral Specific*/
+/*Tiffany Quinlan Specific*/
+.cards{
+	
+}
 
-
-
+.cards .card{
+	background-color: #CCC;
+	border-radius: 15px;
+	box-shadow: 15px 15px #333;
+	height: 200px;
+	-webkit-transform: rotate(7deg);
+}
+.card h2{
+	text-align: center;
+}
 
 
 

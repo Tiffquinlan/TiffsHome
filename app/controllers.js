@@ -108,7 +108,33 @@ var MainCtrl = app.controller('MainCtrl', function($rootScope, $scope, $routePar
 
 
 
+var ConjCtrl = app.controller('ConjCtrl', function($rootScope, $scope, $http, $q, config, dataService){
 
+	var tools = {
+		update: function(){
+			var word = $scope.conj.word
+			var ending = word.substr(word.length-2, 2)
+			var root = word.substr(0, word.length-2)
+			if(ending=='ar'){
+				$scope.conj.ending == 'ar';
+			}else if(ending=='er'){
+				$scope.conj.ending == 'er';
+				$scope.conj.res = {
+					eu: 	root+'o',
+					tu: 	root+'es',
+					ele: 	root+'e',
+					nos: 	root+'mos',
+					vos: 	root+'is',
+					eles: 	root+'m'
+				}
+			}else if(ending=='ir'){
+				$scope.conj.ending == 'ir';
+			}
+		}
+	}
+	$scope.tools = tools;
+	it.CongCtrl = $scope;
+})
 
 
 var SlideCtrl = app.controller('SlideCtrl', function($rootScope, $scope, $http, $q, config, dataService, fileService, userService){

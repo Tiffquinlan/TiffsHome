@@ -1,0 +1,64 @@
+<div class="container" ng-controller="ConjCtrl">
+	<div class="row">
+	    <div class="col-md-12">
+    	    <form class="form-horizontal" role="form">
+	    	    <div class="form-group">
+	    	        <label for="conjType" class="col-sm-2 control-label">Type</label>
+	    	        <div class="col-sm-10">
+		    	        <select id="conjType" class="form-control" ng-model="conj.type">
+		    	        	<option value="verb">Verb</option>
+		    	        	<option value="noun">Noun</option>
+		    	        </select>
+		    	        {{conj.type}}
+	    	        </div>
+	    	    </div>
+	    	    <div class="form-group">
+	    	        <label for="conjWord" class="col-sm-2 control-label">Word</label>
+	    	        <div class="col-sm-10">
+	    	            <input type="text" class="form-control" id="conjWord" placeholder="Word" ng-change="tools.update()" ng-model="conj.word">
+	    	        </div>
+	    	    </div>
+    	    </form>
+    	    <div id="congEnding" class="featured">{{conj.ending}}</div>
+	    </div>
+	    <div class="col-md-12" ng-show="conj.type=='verb'">
+	        <table class="table table-hover">
+		      <thead>
+		      <tr>
+		      	<th>Pronoun</th>
+		      	<th>Conjugation</th>
+		      </tr>
+		      </thead>
+		      <tbody>
+		      	<tr>
+		      		<td>Eu</td>
+		      		<td>{{conj.res.eu}}</td>
+		      	</tr>
+		      	<tr>
+		      		<td>Tu</td>
+		      		<td>{{conj.res.tu}}</td>
+		      	</tr>
+		      	<tr>
+		      		<td>Ele</td>
+		      		<td>{{conj.res.ele}}</td>
+		      	</tr>
+		      	<tr>
+		      		<td>Nos</td>
+		      		<td>{{conj.res.nos}}</td>
+		      	</tr>
+		      	<tr>
+		      		<td>Vos</td>
+		      		<td>{{conj.res.vos}}</td>
+		      	</tr>
+		      	<tr>
+		      		<td>Eles</td>
+		      		<td>{{conj.res.eles}}</td>
+		      	</tr>
+		      </tbody>
+		      </table>
+	    </div>
+	    <div class="col-md-12" ng-show="conj.type=='noun'">
+	    
+	    </div>
+	</div>
+</div>

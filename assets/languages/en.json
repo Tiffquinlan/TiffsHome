@@ -1,12 +1,14 @@
 {
 	"SITE":{
-		"TITLE":"Social - CIA",
+		"TITLE":"Tiffany Quinlan",
 		"NAV":{
 			"HOME":"Home",
-			"ADMIN": "Admin Dashboard"
+			"ABOUT":"About",
+			"PORTFOLIO":"Portfolio",
+			"ADMIN": "Admin"
 		},
 		"LOGIN":"Login",
 		"SIGNUP":"Join",
-		"COPYRIGHT":"2014 Creative Design"
+		"COPYRIGHT":"2014 Tiffany Quinlan"
 	}
 }
