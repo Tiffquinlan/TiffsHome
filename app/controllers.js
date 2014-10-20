@@ -328,7 +328,7 @@ var MissionCtrl = app.controller('MissionCtrl', function($rootScope, $scope, $ht
 var MapCtrl = app.controller('MapCtrl', function($rootScope, $scope){
 	var tools = {
 		init:function(elemId, doBounce, doInfowindow) {
-			var myLatlng = new google.maps.LatLng(37.046711,-112.533212);
+			var myLatlng = new google.maps.LatLng(40.251844,-111.649316,15);
 			var mapOptions = {
 				zoom: 16,
 				center: myLatlng
@@ -339,9 +339,9 @@ var MapCtrl = app.controller('MapCtrl', function($rootScope, $scope){
 			'<div id="content">'+
 				'<div id="siteNotice">'+
 				'</div>'+
-				'<h1 id="firstHeading" class="firstHeading">Jake\'s Chaparral</h1>'+
+				'<h1 id="firstHeading" class="firstHeading">The School!</h1>'+
 				'<div id="bodyContent">'+
-					'<p><a href="'+$rootScope.map+'" target="_new">86 S 200 W,<br> Kanab, Utah 84741</a><br>(435) 644-5464</p>'+
+					'<p>BYU is the place to be:)</p>'+
 				'</div>'+
 			'</div>';
 
@@ -353,7 +353,7 @@ var MapCtrl = app.controller('MapCtrl', function($rootScope, $scope){
 				animation: google.maps.Animation.DROP,
 				position: myLatlng,
 				map: map,
-				title: 'Jake\'s Chaparral!'
+				title: 'Tiffany Quinlan!'
 			});
 			if(doBounce)
 				marker.setAnimation(google.maps.Animation.BOUNCE);
